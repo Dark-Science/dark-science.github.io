@@ -1,0 +1,94 @@
+/*
+ * Zadron Xion-inspired Style: GitHub Pages/Standard Website
+ * Place your main content inside a <div class="container">...</div>
+ */
+
+:root {
+    --main-bg: #111111;
+    --text-color: #EEEEEE;
+    --link-color: #00BFFF; /* Deep Sky Blue for links */
+    --link-hover-color: #FFFFFF;
+    --accent-bg: #222222;
+    --border-color: #333333;
+    --font-family-mono: 'Consolas', 'Courier New', monospace;
+    --max-content-width: 900px;
+}
+
+body {
+    background-color: var(--main-bg);
+    color: var(--text-color);
+    font-family: var(--font-family-mono);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Center and constrain main content (Use <div class="container">) */
+.container {
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+/* Code Blocks and Inline Code */
+pre, code {
+    font-family: var(--font-family-mono);
+    background-color: var(--accent-bg);
+    color: var(--text-color);
+    padding: 2px 4px;
+    border-radius: 3px;
+    overflow-x: auto;
+}
+
+pre {
+    padding: 10px;
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid var(--link-color);
+    margin: 1.5em 0;
+    padding: 0.5em 10px;
+    background-color: var(--accent-bg);
+    color: var(--text-color);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--accent-bg);
+}
