@@ -1,94 +1,57 @@
-/*
- * Zadron Xion-inspired Style: GitHub Pages/Standard Website
- * Place your main content inside a <div class="container">...</div>
- */
-
-:root {
-    --main-bg: #111111;
-    --text-color: #EEEEEE;
-    --link-color: #00BFFF; /* Deep Sky Blue for links */
-    --link-hover-color: #FFFFFF;
-    --accent-bg: #222222;
-    --border-color: #333333;
-    --font-family-mono: 'Consolas', 'Courier New', monospace;
-    --max-content-width: 900px;
-}
-
 body {
-    background-color: #000000;
-    color: var(--text-color);
-    font-family: var(--font-family-mono);
-    margin: 0;
-    padding: 20px;
-    line-height: 1.6;
+  background: #fff;
+  color: #111;
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-
-/* Center and constrain main content (Use <div class="container">) */
-.container {
-    max-width: var(--max-content-width);
-    margin: 0 auto;
-    padding: 20px;
+header,
+nav {
+  background: #f8f8f8;
+  border-bottom: 1px solid #eee;
+  padding: 1em 0.5em;
+  text-align: center;
 }
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-    color: var(--text-color);
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 5px;
-    margin-top: 25px;
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 1em;
+  font-weight: 600;
+  transition: color 0.2s;
 }
-
-/* Links */
+nav a:hover {
+  color: #0064b6;
+}
+h1, h2, h3 {
+  font-family: inherit;
+  font-weight: bold;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  color: #222;
+}
+article {
+  max-width: 700px;
+  margin: 2em auto;
+  padding: 2em;
+  background: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
 a {
-    color: var(--link-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: #0064b6;
+  text-decoration: underline;
 }
-
-a:hover {
-    color: var(--link-hover-color);
-    text-decoration: underline;
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 2em 0;
 }
-
-/* Code Blocks and Inline Code */
-pre, code {
-    font-family: var(--font-family-mono);
-    background-color: var(--accent-bg);
-    color: var(--text-color);
-    padding: 2px 4px;
-    border-radius: 3px;
-    overflow-x: auto;
+footer {
+  text-align: center;
+  color: #888;
+  font-size: 0.95em;
+  margin: 2em 0 1em 0;
 }
-
-pre {
-    padding: 10px;
-    display: block;
-    margin-bottom: 20px;
-    border: 1px solid var(--border-color);
-}
-
-/* Blockquotes */
-blockquote {
-    border-left: 4px solid var(--link-color);
-    margin: 1.5em 0;
-    padding: 0.5em 10px;
-    background-color: var(--accent-bg);
-    color: var(--text-color);
-}
-
-/* Tables */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-th, td {
-    border: 1px solid var(--border-color);
-    padding: 8px;
-    text-align: left;
-}
-
-th {
-    background-color: var(--accent-bg);
+ul {
+  margin-left: 1.5em;
 }
