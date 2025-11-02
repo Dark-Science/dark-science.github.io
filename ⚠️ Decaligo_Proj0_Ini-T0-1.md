@@ -1,15 +1,4 @@
----
-title: ⚠️ Decaligo_Proj0_Ini-T0
-updated: 2025-10-06 00:15:52Z
-created: 2025-09-07 04:54:00Z
-latitude: 33.19011940
-longitude: -96.99167400
-altitude: 0.0000
-tags:
-  - decaligo consilideon project 0
-  - gnu octave
-  - projectile motion
----
+
 
 # Initiation Trial 0
 
